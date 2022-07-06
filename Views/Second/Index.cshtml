@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>This is second Index</h2>
+
+<a href="http://www.baidu.com">百度一下</a>
+<br />
+<p>我是新的一行</p>
+
+@{ int i = 3; int y = 4;}
+@if (i > 2)
+{
+    <a href="http://www.google.com">我是Google</a>
+}
+
+@for (int k = 0; k < 10; k++)
+{
+    <a href="www.baidu.com">这是连接@k</a>
+}
+
+<!--Action内部跳转嵌套-->
+<h2>我是内部跳转Action,First param is aciton name,second param is controller name,third pamara is input param</h2>
+@{ Html.RenderAction("ChildAction", "Second",new {name = "Timonthy"});}
+
+<h2>我是页面嵌套</h2>
+@{ Html.RenderPartial("ChildAction","Timonthy");}
+
+<!--JS脚本-->
+@section scripts{
+    <script>
+        $function(){
+            alert("我是JS脚本")
+        }
+    </script>
+    }

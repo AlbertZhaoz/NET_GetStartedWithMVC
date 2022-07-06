@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Albert";
+}
+@model string
+<h2>Albert</h2>
+
+
+<!--这里面是VIEW层-->
+<h3>ViewBag.User1:@ViewBag.User1</h3>
+<h3>ViewBag.User2:@ViewBag.User2</h3>
+<h3>ViewData:@ViewData["company"]</h3>
+<h3>TempData:@TempData["temp"]</h3>
+<h3>HttpContext:@HttpContext.Current.Session["User"]</h3>
+<h3>model:@Model</h3 >
