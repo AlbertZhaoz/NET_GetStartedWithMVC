@@ -1,3 +1,4 @@
+using GetStartedWithASPNETMVC.Utility;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,11 @@ namespace GetStartedWithASPNETMVC
     {
         protected void Application_Start()
         {
-            AreaRegistration.RegisterAllAreas();//注册区域
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);//注册全局Filter
-            RouteConfig.RegisterRoutes(RouteTable.Routes);//注册路由
-            BundleConfig.RegisterBundles(BundleTable.Bundles);//注册Bundles--引用JS/CS需要的组件
+            AreaRegistration.RegisterAllAreas();// 注册区域
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);// 注册全局Filter
+            RouteConfig.RegisterRoutes(RouteTable.Routes);// 注册路由
+            BundleConfig.RegisterBundles(BundleTable.Bundles);// 注册Bundles--引用JS/CS需要的组件
+            ControllerBuilder.Current.SetControllerFactory(new ControllerFactoryHelper()); // 使用自定义的控制器工厂
         }
     }
 }

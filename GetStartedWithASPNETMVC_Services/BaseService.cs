@@ -13,6 +13,7 @@ namespace GetStartedWithASPNETMVC_Services
     public class BaseService:IBaseService
     {
         #region Identity
+        // 依赖注入注入进去
         protected DbContext Context { get; private set; }
         /// <summary>
         /// 构造函数注入
