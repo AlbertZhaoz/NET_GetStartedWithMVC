@@ -157,6 +157,7 @@
     <Compile Include="Areas\UserManagerArea\UserManagerAreaAreaRegistration.cs" />
     <Compile Include="Controllers\BuilderControllerFactoryController.cs" />
     <Compile Include="Controllers\EFController.cs" />
+    <Compile Include="Controllers\FilterController.cs" />
     <Compile Include="Controllers\FirstController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SecondController.cs" />
@@ -165,7 +166,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\ControllerFactoryHelper.cs" />
+    <Compile Include="Utility\Filter\CustomCompressionActionFilterAttribute.cs" />
     <Compile Include="Utility\DIFactoryHelper.cs" />
+    <Compile Include="Utility\Filter\FilterHelper.cs" />
     <Compile Include="Utility\LoggerHelper.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -226,6 +229,7 @@
     <Content Include="Views\EF\Index.cshtml" />
     <Content Include="Views\EF\UnityIndex.cshtml" />
     <Content Include="Views\BuilderControllerFactory\BuilderIndex.cshtml" />
+    <Content Include="Views\Filter\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\DepartmentArea\Controllers\" />
