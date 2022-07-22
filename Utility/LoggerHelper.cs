@@ -8,20 +8,20 @@ using System.Web;
 
 namespace GetStartedWithASPNETMVC.Utility
 {
-    public class Logger
+    public class LoggerHelper
     {
         private ILog loger = null;
         /// <summary>
         /// 静态构造函数（整个进程只执行一次-读取配置文件）
         /// </summary>
-        static Logger()
+        static LoggerHelper()
         {
             XmlConfigurator.Configure(new FileInfo(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Configs\\log4net.config")));
-            ILog Log = LogManager.GetLogger(typeof(Logger));
+            ILog Log = LogManager.GetLogger(typeof(LoggerHelper));
             Log.Info("系统初始化Logger模块");
         }
 
-        public Logger(Type type)
+        public LoggerHelper(Type type)
         {
             loger = LogManager.GetLogger(type);
         }

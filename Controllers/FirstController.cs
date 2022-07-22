@@ -9,7 +9,7 @@ namespace GetStartedWithASPNETMVC.Controllers
 {
     public class FirstController : Controller
     {
-        private readonly Logger _logger = new Logger(typeof(FirstController));
+        private readonly LoggerHelper _logger = new LoggerHelper(typeof(FirstController));
         // GET: First
         public ActionResult Index()
         {

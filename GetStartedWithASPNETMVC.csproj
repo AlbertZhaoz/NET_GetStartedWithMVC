@@ -156,6 +156,8 @@
     <Compile Include="Areas\UserManagerArea\Controllers\UserManangerController.cs" />
     <Compile Include="Areas\UserManagerArea\UserManagerAreaAreaRegistration.cs" />
     <Compile Include="Controllers\BuilderControllerFactoryController.cs" />
+    <Compile Include="Controllers\CompressionController.cs" />
+    <Compile Include="Controllers\CustomHandleController.cs" />
     <Compile Include="Controllers\EFController.cs" />
     <Compile Include="Controllers\FilterController.cs" />
     <Compile Include="Controllers\FirstController.cs" />
@@ -168,6 +170,8 @@
     <Compile Include="Utility\ControllerFactoryHelper.cs" />
     <Compile Include="Utility\Filter\CustomCompressionActionFilterAttribute.cs" />
     <Compile Include="Utility\DIFactoryHelper.cs" />
+    <Compile Include="Utility\Filter\CustomExceptionFilterAttribute.cs" />
+    <Compile Include="Utility\Filter\CustomHandleErrorAttribute.cs" />
     <Compile Include="Utility\Filter\FilterHelper.cs" />
     <Compile Include="Utility\LoggerHelper.cs" />
   </ItemGroup>
@@ -230,6 +234,8 @@
     <Content Include="Views\EF\UnityIndex.cshtml" />
     <Content Include="Views\BuilderControllerFactory\BuilderIndex.cshtml" />
     <Content Include="Views\Filter\Index.cshtml" />
+    <Content Include="Views\Compression\Index.cshtml" />
+    <Content Include="Views\CustomHandle\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\DepartmentArea\Controllers\" />

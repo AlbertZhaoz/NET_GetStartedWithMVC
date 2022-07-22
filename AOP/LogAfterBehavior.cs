@@ -22,7 +22,7 @@ namespace GetStartedWithASPNETMVC.AOP
         public bool WillExecute => true;
 
         //在执行数据库查询之后，读取一些文件内容，记录到数据库中。
-        private readonly Logger logger = new Logger(typeof(LogAfterBehavior));
+        private readonly LoggerHelper logger = new LoggerHelper(typeof(LogAfterBehavior));
 
 
         public IEnumerable<Type> GetRequiredInterfaces()
