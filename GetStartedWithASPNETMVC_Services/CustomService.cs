@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace GetStartedWithASPNETMVC_Services
 {
-    public class OnlineService : BaseService, IOnlineService
+    public class CustomService : BaseService, ICustomService
     {
-        public OnlineService(DbContext context) : base(context)
+        public CustomService(DbContext context) : base(context)
         {
 
         }

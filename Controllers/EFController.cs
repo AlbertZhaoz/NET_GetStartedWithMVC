@@ -27,7 +27,7 @@ namespace GetStartedWithASPNETMVC.Controllers
             //    ViewBag.Online_Last_Station = online.Last_Station;
             //}
             //
-            IOnlineService onlineService = new OnlineService(new SubaruDbContext());
+            ICustomService onlineService = new CustomService(new SubaruDbContext());
             var firstOnline = onlineService.Find<Online>(6);
             ViewBag.Online_Last_Station = firstOnline.Last_Station;
             return View();
@@ -36,7 +36,7 @@ namespace GetStartedWithASPNETMVC.Controllers
         public ActionResult UnityIndex()
         {
             // Unity在MVC中的应用       
-            IOnlineService service = DIFactoryHelper.GetContainer().Resolve<IOnlineService>();
+            ICustomService service = DIFactoryHelper.GetContainer().Resolve<ICustomService>();
             var online = service.Find<Online>(7);
             base.ViewBag.Last_Result = online.Last_Result;
             return View();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GetStartedWithASPNETMVC_Interface
 {
-    public interface IOnlineService:IBaseService
+    public interface ICustomService:IBaseService
     {
 
     }

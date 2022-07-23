@@ -17,9 +17,9 @@ namespace GetStartedWithASPNETMVC.Controllers
     public class BuilderControllerFactoryController: Controller
     {
         // 这个控制器用来通过构造函数注入服务
-        private readonly IOnlineService _service = null;
+        private readonly ICustomService _service = null;
 
-        public BuilderControllerFactoryController(IOnlineService service)
+        public BuilderControllerFactoryController(ICustomService service)
         {
             _service = service;
         }
@@ -27,16 +27,16 @@ namespace GetStartedWithASPNETMVC.Controllers
         #region 扩展：属性注入和方法注入
         //属性注入
         [Dependency]
-        public IOnlineService _IOnlineServiceProp { get; set; }
+        public ICustomService _IOnlineServiceProp { get; set; }
 
-        private IOnlineService _IOnlineServiceMethod { get; set; }
+        private ICustomService _IOnlineServiceMethod { get; set; }
 
         /// <summary>
         /// 方法注入
         /// </summary>
         /// <returns></returns>
         [InjectionMethod]
-        public void SetICompanyServiceMethod(IOnlineService iOnlineService)
+        public void SetICompanyServiceMethod(ICustomService iOnlineService)
         {
             _IOnlineServiceMethod = iOnlineService;
         }

@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetStartedWithASPNETMVC_Int
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetStartedWithASPNETMVC_Services", "GetStartedWithASPNETMVC_Services\GetStartedWithASPNETMVC_Services.csproj", "{99A87EFB-DDCE-458F-A189-8D15A406AEF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetStartedWithASPNETMVC_Sqlsugar", "..\GetStartedWithASPNETMVC_Sqlsugar\GetStartedWithASPNETMVC_Sqlsugar.csproj", "{B0D02437-206A-4DF1-A9D4-A4BD046CB773}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetStartedWithASPMVC_SqlsugarDbcontext", "GetStartedWithASPMVC_SqlsugarDbcontext\GetStartedWithASPMVC_SqlsugarDbcontext.csproj", "{DF8455D6-AB00-4474-8B77-F57E10D54AA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{99A87EFB-DDCE-458F-A189-8D15A406AEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99A87EFB-DDCE-458F-A189-8D15A406AEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99A87EFB-DDCE-458F-A189-8D15A406AEF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0D02437-206A-4DF1-A9D4-A4BD046CB773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D02437-206A-4DF1-A9D4-A4BD046CB773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D02437-206A-4DF1-A9D4-A4BD046CB773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D02437-206A-4DF1-A9D4-A4BD046CB773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF8455D6-AB00-4474-8B77-F57E10D54AA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF8455D6-AB00-4474-8B77-F57E10D54AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF8455D6-AB00-4474-8B77-F57E10D54AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF8455D6-AB00-4474-8B77-F57E10D54AA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,23 @@
+﻿@using GetStartedWithASPMVC_SqlsugarDbcontext
+@model T_CurrentUser
+
+@if (base.Context.Session["T_CurrentUser"] != null && base.Context.Session["T_CurrentUser"] is T_CurrentUser)
+{
+    using (Html.BeginForm("Logout", "Login", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink("你好 " + ((T_CurrentUser)Context.Session["T_CurrentUser"]).Name + "!", "Index", "Home", routeValues: null, htmlAttributes: new { title = ((T_CurrentUser)Context.Session["T_CurrentUser"]).Name })
+            </li>
+            <li><a href="javascript:document.getElementById('logoutForm').submit()">注销</a></li>
+        </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("登录", "Log", "Login", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

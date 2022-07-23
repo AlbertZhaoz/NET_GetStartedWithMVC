@@ -19,5 +19,17 @@ namespace GetStartedWithASPNETMVC
             BundleConfig.RegisterBundles(BundleTable.Bundles);// 注册Bundles--引用JS/CS需要的组件
             ControllerBuilder.Current.SetControllerFactory(new ControllerFactoryHelper()); // 使用自定义的控制器工厂
         }
+
+        /// <summary>
+        /// 只要是响应不是200，就能在这边捕捉到，捕捉异常的漏网之鱼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void Application_Error(object sender, EventArgs e)
+        {
+            Exception excetion = Server.GetLastError();
+            Response.Write("System is Error....");
+            Server.ClearError();
+        }
     }
 }
